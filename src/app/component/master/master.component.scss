@@ -1,0 +1,34 @@
+.spacer-toolbar-icons {
+  flex: 1 1 auto;
+}
+
+.spacer-links {
+	margin: 5px 10px;
+}
+
+.container-body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sidenav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	background: #3f51b5;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	// background-color: #3f51b5; 
+	// padding: 25px;
+}

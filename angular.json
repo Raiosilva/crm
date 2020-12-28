@@ -131,6 +131,6 @@
   },
   "defaultProject": "crm",
   "cli": {
-    "analytics": "850a209a-942f-487d-aab1-a97b7efed56d"
+    "analytics": false
   }
 }
