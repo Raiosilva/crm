@@ -1,12 +1,12 @@
 <div class="container-body">
 	<mat-toolbar color="primary">
-		<button mat-icon-button>
+		<!-- <button mat-icon-button>
 			<mat-icon>menu</mat-icon>
-		</button>
-			<span class="spacer-links">CRM</span>
-			<span class="spacer-links">Pessoas</span>
-			<span class="spacer-links">Notícias</span>
-			<span class="spacer-links">Blog</span>
+		</button> -->
+		<span class="spacer-links">CRM</span>
+		<span class="spacer-links">Pessoas</span>
+		<span class="spacer-links">Notícias</span>
+		<span class="spacer-links">Blog</span>
 		<span class="spacer-toolbar-icons"></span>
 		<button mat-icon-button>
 			<mat-icon>account_circle</mat-icon>
@@ -18,7 +18,16 @@
 			<mat-icon>share</mat-icon>
 		</button>
 	</mat-toolbar>
+
+	<mat-sidenav-container>
+		<mat-sidenav mode="side" opened="true">
+			<mat-nav-list>
+				<app-menu-list-item *ngFor="let item of navItems" [item]="item"></app-menu-list-item>
+			</mat-nav-list>
+		</mat-sidenav>
+	</mat-sidenav-container>
 	<ng-content></ng-content>
+
 	<mat-toolbar color="primary" class="footer">
 		<span class="spacer-links">Footer</span>
 	</mat-toolbar>
